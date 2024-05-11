@@ -1,65 +1,40 @@
+# Cyber and Information Security Lab Website
 
-TITLE: 
-Slant - Responsive Free HTML5 template
+Welcome to the Cyber and Information Security Lab website! This website serves as a platform to showcase our lab's activities, core members, ongoing projects, and provides a convenient lab reservation system for users to schedule their lab sessions. 
 
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
-http://freehtml5.co/
-http://twitter.com/fh5co
-http://facebook.com/fh5co
+## Features
 
-
-CREDITS:
-
-Bootstrap
-http://getbootstrap.com/
-
-Unsplash for Photos
-http://unsplash.com/
-
-plmd.me for Photos
-http://plmd.me/
-
-jQuery
-http://jquery.com/
-
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
-
-Modernizr
-http://modernizr.com/
-
-Modernizr
-http://modernizr.com/
-
-Owl Carousel
-http://owlgraphic.com/owlcarousel/
-
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
-
-Google Fonts
-https://www.google.com/fonts/
-
-Themify Icons
-http://themify.me/themify-icons
-
-Superfish
-http://users.tpg.com.au/j_birch/plugins/superfish/
-
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-Easy Responsive Tabs
-Samson.Onna <Email : samson3d@gmail.com> 
-
-FastClick
-https://github.com/ftlabs/fastclick
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
+1. Responsive
+2. Dark Mode
+3. Text Only Mode
+4. Batttery Saver Mode
+4. Database Integration
 
 
+## Table of Contents
+
+1. [About Us](#about-us)
+2. [Core Members](#core-members)
+3. [Projects](#projects)
+4. [Lab Reservation System](#lab-reservation-system)
+
+
+## Lab Reservation System
+
+Our lab reservation system allows users to conveniently schedule their lab sessions. Here's how it works:
+
+1. **Select Date and Time**: Users can choose the date and time slot for their lab session.
+2. **Confirm Reservation**: Once the desired date and time are selected, users can confirm their reservation.
+
+
+![Lab Reservation System](lab_reservation.png)
+
+## Contributing
+
+We welcome contributions from the community to improve our website and lab reservation system. If you'd like to contribute, please follow our [contribution guidelines](CONTRIBUTING.md).
+
+## Contact Us
+
+If you have any questions or suggestions, feel free to reach out to us at zuhafatima.317@gmail.com.
+
+Thank you for visiting our Cyber and Information Security Lab website!
