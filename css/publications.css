@@ -1,0 +1,267 @@
+
+
+/* table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+} */
+  
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+  
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+  
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+  
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+  
+@media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+}
+#fh5co-footer {
+  clear: both;
+  position: relative;
+  padding: 4em 0 1em 0;
+  background: #37608F;
+  background: #37608F;
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  line-height: 20px;
+}
+#fh5co-footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -4em;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  background: #37608F;
+  background: #37608F;
+  z-index: -1;
+  -webkit-transform: skewY(3deg);
+  -moz-transform: skewY(3deg);
+  -ms-transform: skewY(3deg);
+  -o-transform: skewY(3deg);
+  transform: skewY(3deg);
+}
+#fh5co-footer .fh5co-arrow {
+  position: absolute;
+  top: -84px;
+  left: 50%;
+  margin-left: -30px;
+  display: table;
+  color: #fff !important;
+  font-size: 24px;
+  z-index: 99;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  background: #37608F;
+  border-bottom: none !important;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+  -moz-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+  -ms-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+  -o-box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+}
+#fh5co-footer .fh5co-arrow i {
+  display: table-cell;
+  vertical-align: middle;
+}
+#fh5co-footer .fh5co-arrow:active, #fh5co-footer .fh5co-arrow:focus, #fh5co-footer .fh5co-arrow:hover {
+  outline: none;
+  color: var(--secondary-color) !important;
+}
+#fh5co-footer .fh5co-copyright {
+  margin-top: 5em;
+}
+#fh5co-footer .fh5co-footer-heading {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+#fh5co-footer .fh5co-footer-links {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+#fh5co-footer .fh5co-footer-links li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btnfooter {
+  border-bottom: none !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 10px;
+}
+
+.quote {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 38px;
+}
+
+.quotebetter{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+
+.quote cite {
+  margin-top: 20px;
+  display: block;
+  font-size: 20px;
+  font-style: normal;
+}
+@media screen and (max-width: 768px) {
+  .quote {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+/* Helper Classes */
+/* Spacer */
+.fh5co-spacer {
+  clear: both;
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fh5co-spacer-xlg {
+  height: 150px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-spacer-xlg {
+    height: 70px;
+  }
+}
+
+.fh5co-spacer-lg {
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-spacer-lg {
+    height: 50px;
+  }
+}
+
+.fh5co-spacer-md {
+  height: 80px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-spacer-md {
+    height: 30px;
+  }
+}
+
+.fh5co-spacer-sm {
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-spacer-sm {
+    height: 20px;
+  }
+}
+
+.fh5co-spacer-xs {
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-spacer-xs {
+    height: 20px;
+  }
+}
+
+  
+  

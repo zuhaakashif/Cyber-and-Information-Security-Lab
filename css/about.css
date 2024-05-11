@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #37608F; /*#366787*/
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    text-decoration: underline;
+    color: rgb(81, 111, 141);
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+.header .imglogo {
+    width: 260px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+.hero{
+    background-color: rgb(255, 255, 255);
+}
+.heading h1{
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+.hero-content h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+}
+.hero-image{
+    flex: 1;
+    width: 500px;
+
+    margin: auto;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

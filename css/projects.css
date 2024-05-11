@@ -1,0 +1,79 @@
+body{
+    background-color: var(--secondary-color);
+}
+
+
+.container1 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the projects horizontally */
+    margin-top: 50px; /* Adjust this value to move the projects lower */
+}
+
+
+.project {
+    width: calc(50% - 20px); /* Two projects per row with margin between */
+    
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark-theme .project {
+    width: calc(50% - 20px); /* Two projects per row with margin between */
+    
+    margin: 10px;
+    background-color:var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.project p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .container1 {
+        padding: 10px;
+    }
+
+    .project {
+        width: calc(100% - 20px); /* Full width for smaller screens */
+    }
+}
+
+/* Changes for screens larger than 1200px */
+
+@media screen and (min-width: 1200px) {
+    .container1 {
+        max-width: 1000px;
+    }
+}

@@ -1,0 +1,37 @@
+/* Hide elements other than the button in text-only mode */
+.text-only-mode img,
+.text-only-mode h1,
+.text-only-mode h2,
+.text-only-mode h3,
+.text-only-mode h4,
+.text-only-mode h5,
+.text-only-mode h6,
+.text-only-mode p {
+    display: none;
+}
+
+/* Change button content and style in text-only mode */
+.text-only-mode #textOnlyModeToggle {
+    content: "Return to Regular Mode";
+    /* Adjust styles as needed */
+    position: fixed;
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust left position as needed */
+    background-color: #1e2b3c; /* Dark blue color */
+    color: #fff; /* White text color */
+    border-color: #1e2b3c; /* Dark blue border color */
+    font-size: 12px; /* Adjust font size as needed */
+    padding: 3px 6px; /* Adjust padding as needed */
+    border-radius: 2px; /* Adjust border radius as needed */
+    z-index: 9999; /* Ensure button appears above other content */
+}
+
+/* Button hover effect */
+.text-only-mode #textOnlyModeToggle:hover {
+    background-color: #1a2736; /* Darker blue on hover */
+}
+
+/* Hide regular mode button when in text-only mode */
+.text-only-mode #textOnlyModeToggle.regular-mode {
+    display: none;
+}

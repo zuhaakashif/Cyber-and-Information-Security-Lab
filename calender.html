@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IST - CISL</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="shortcut icon" href="favicon.ico">
+
+  	<!-- Google Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<!-- Themify Icons -->
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<!-- Bootstrap -->
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="css/superfish.css">
+	<!-- Easy Responsive Tabs -->
+	<link rel="stylesheet" href="css/easy-responsive-tabs.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/textonly.css">
+<style>
+    /* Add your CSS styles here */
+</style>
+</head>
+<body>
+
+<header id="fh5co-header-section" role="header">
+    <div class="container">
+        <h1 id="fh5co-logo" class="pull-left"><a href="index.html"><img src="{{ url_for('static', filename='images/logo.png') }}" class="imgist" alt="IST CISL"></a></h1>
+        <nav id="fh5co-menu-wrap" role="navigation">
+            <ul class="sf-menu" id="fh5co-primary-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="members.html">Core Members</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">List of Publication</a></li>
+                <li><a href="newsandadv.html">News & Advisories</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><img src="{{ url_for('static', filename='images/textmode3.png') }}" id="icontextonly"></li>
+                <li><img src="{{ url_for('static', filename='images/moon.png') }}" id="icon"></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            {% set dateComponents = date.today() %}
+            {% set month = request.args.get('month', dateComponents.month) %}
+            {% set year = request.args.get('year', dateComponents.year) %}
+            {{ build_calendar(month, year)|safe }}
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+<!-- Add other JS files here -->
+</body>
+</html>
+
+{% macro build_calendar(month, year) %}
+    {% set daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] %}
+    {% set firstDayOfMonth = date(year, month, 1) %}
+    {% set numberDays = firstDayOfMonth|date('t') %}
+    {% set dateComponents = firstDayOfMonth.date() %}
+    {% set monthName = dateComponents.strftime('%B') %}
+    {% set dayOfWeek = dateComponents.weekday() %}
+    {% set dateToday = now().date() %}
+    {% set prev_month = month - 1 %}
+    {% set prev_year = year %}
+    {% set next_month = month + 1 %}
+    {% set next_year = year %}
+    
+    <center><h2>{{ monthName }} {{ year }}</h2>
+    <a class="btn btn-primary btn-xs" href="?month={{ prev_month }}&year={{ prev_year }}">Prev Month</a>
+    <a class="btn btn-primary btn-xs" href="?month={{ date.today().month }}&year={{ date.today().year }}">Current Month</a>
+    <a class="btn btn-primary btn-xs" href="?month={{ next_month }}&year={{ next_year }}">Next Month</a></center>
+    <br>
+    <table class="table table-bordered">
+        <tr>
+            {% for day in daysOfWeek %}
+                <th class="header">{{ day }}</th>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% if dayOfWeek > 0 %}
+                {% for k in range(dayOfWeek) %}
+                    <td class="empty"></td>
+                {% endfor %}
+            {% endif %}
+            {% for currentDay in range(1, numberDays + 1) %}
+                {% set currentDayRel = "%02d"|format(currentDay) %}
+                {% set date = "%d-%02d-%s"|format(year, month, currentDayRel) %}
+                {% set dayOfWeek = date|date('w') %}
+                {% set today = (date == dateToday) ? 'today' : '' %}
+                {% if date < dateToday %}
+                    <td><h4>{{ currentDay }}</h4><button class="btn btn-success btn-xs rounded-pill" style="background-color: red;">N/A</button></td>
+                {% elif dayOfWeek == 0 or dayOfWeek == 6 %}
+                    <td><h4>{{ currentDay }}</h4><button class="btn btn-success btn-xs rounded-pill" style="background-color: red;">Holiday</button></td>
+                {% else %}
+                    <td class="{{ today }}"><h4>{{ currentDayRel }}</h4><a href="book?date={{ date }}" class="btn btn-success btn-xs rounded-pill" style="background-color: black;">Book</a></td>
+                {% endif %}
+                {% if dayOfWeek == 6 and currentDay != numberDays %}
+                    </tr><tr>
+                {% endif %}
+            {% endfor %}
+            {% if dayOfWeek < 6 %}
+                {% for k in range(6 - dayOfWeek) %}
+                    <td class="empty"></td>
+                {% endfor %}
+            {% endif %}
+        </tr>
+    </table>
+{% endmacro %}
