@@ -35,15 +35,15 @@ Our lab reservation system enables users to easily schedule lab sessions. Here's
 To provide a better overview of our website, here are a few screenshots:
 
 - **Home Page:**
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis-1.jpg)
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis2.jpg)
+  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis-1.png)
+  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis2.png)
 
 - **Projects Section:**
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis5.jpg)
+  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis5.png)
 
 - **Lab Reservation System:**
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis3.jpg)
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis4.jpg)
+  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis3.png)
+  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis4.png)
 
 > *Note: Make sure your `screenshots` folder is organized with clear labels and proper paths for the images.*
 
