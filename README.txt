@@ -1,67 +1,111 @@
+### README
 
-# Cyber and Information Security Lab Website
+# UniShelf
 
-Welcome to the Cyber and Information Security Lab website! This platform showcases our lab's activities, core members, ongoing projects, and features a convenient lab reservation system for scheduling lab sessions.
+## Overview
+
+This Kotlin-based Android application is designed to enhance the academic experience for university students by allowing them to effortlessly discover and access course materials for their current semester. With a user-friendly interface, Firebase authentication, and a variety of resources, this app ensures that students have all the materials they need at their fingertips.
 
 ## Features
-- Responsive Design
-- Dark Mode
-- Text-Only Mode
-- Battery Saver Mode
-- Database Integration
 
----
-
-## Table of Contents
-1. [About Us](#about-us)
-2. [Core Members](#core-members)
-3. [Projects](#projects)
-4. [Lab Reservation System](#lab-reservation-system)
-5. [Screenshots](#screenshots)
-6. [Contributing](#contributing)
-7. [Contact Us](#contact-us)
-
----
-
-## Lab Reservation System
-Our lab reservation system enables users to easily schedule lab sessions. Here's how it works:
-
-1. **Select Date and Time:** Users choose a preferred date and time slot for their lab session.
-2. **Confirm Reservation:** After selecting the desired slot, users can confirm their reservation.
-
----
+- **User Authentication with Firebase:** Sign up and log in using Firebase for secure and seamless access.
+- **Semester Selection:** After signing in, users can select their current semester, and the app will display all the courses available for that semester.
+- **Course Materials:** Each course offers multiple resources:
+  - **Books**
+  - **Past Papers**
+  - **Course Outlines**
+  - **Notes**
+- **Dark Mode:** Users can view books in dark mode, making it easier to read in low-light environments.
 
 ## Screenshots
-To provide a better overview of our website, here are a few screenshots:
 
-- Home Page:
-  ![Home Page](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis-1.png?raw=true)
+-----------
 
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis2.png)
+![Screenshot](https://github.com/zuhaakashif/UniShelf/blob/main/unishelf-1.jpg)
 
-- **Projects Section:**
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis5.png)
+-----------------------------------------------
 
-- **Lab Reservation System:**
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis3.png)
-  ![Screenshot](https://github.com/zuhaakashif/Cyber-and-Information-Security-Lab/blob/main/csis4.png)
+![Screenshot](https://github.com/zuhaakashif/UniShelf/blob/main/unishelf-2.jpg)
 
+---------------------------------------------
+
+![Screenshot](https://github.com/zuhaakashif/UniShelf/blob/main/unishelf-3.jpg)
+
+--------------------------------------------------
+
+![Screenshot](https://github.com/zuhaakashif/UniShelf/blob/main/unishelf-4.jpg)
+
+--------------------------------------------------
+
+![Screenshot](https://github.com/zuhaakashif/UniShelf/blob/main/unishelf-5.jpg)
+
+--------------------------------------------------
+## Installation
+
+### Prerequisites
+
+- **Android Studio**: Ensure that you have the latest version of Android Studio installed.
+- **Kotlin Support**: The project is developed using Kotlin, so make sure Kotlin is enabled in your Android Studio.
+
+### Steps
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/university-course-materials-app.git
+   ```
+2. **Open the Project in Android Studio:**
+   - Launch Android Studio.
+   - Select "Open an existing Android Studio project" and navigate to the cloned repository.
+   
+3. **Sync Project with Gradle Files:**
+   - Android Studio will prompt you to sync the project with Gradle files. Click "Sync Now."
+
+4. **Configure Firebase:**
+   - Go to [Firebase Console](https://console.firebase.google.com/).
+   - Create a new project and add an Android app to your project.
+   - Download the `google-services.json` file and place it in the `app/` directory of your Android project.
+   - Add Firebase authentication and Firestore to your project.
+
+5. **Run the App:**
+   - Once everything is set up, click the "Run" button to install the app on an emulator or physical device.
+
+## Usage
+
+1. **Sign Up/Login:**
+   - Users can create a new account or log in with their existing credentials using Firebase Authentication.
+
+2. **Select Semester:**
+   - After logging in, the app will prompt users to select their current semester. This selection will filter the courses displayed.
+
+3. **Browse Course Materials:**
+   - The app will display a list of courses based on the selected semester.
+   - Clicking on a course will show options for Books, Past Papers, Course Outlines, and Notes.
+
+4. **Dark Mode:**
+   - Users can enable dark mode for a better reading experience, especially when viewing books.
+
+## Technologies Used
+
+- **Kotlin:** The primary programming language used for Android development.
+- **Firebase:** For user authentication and real-time database.
+- **Material Design:** For a clean and intuitive user interface.
+- **Dark Mode:** Implemented using Android's built-in dark theme support.
 
 ## Contributing
-We welcome community contributions to improve both our website and lab reservation system. Please refer to our [contribution guidelines](CONTRIBUTING.md) for more details on how you can help.
+
+Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to contact:
+
+- **Zuha Fatima & Humna Ali**
+- **Email:** zuha.fatima317@gmail.com
 
 ---
 
-## Contact Us
-If you have any questions or suggestions, feel free to reach out at [zuhafatima.317@gmail.com](mailto:zuhafatima.317@gmail.com).
-
-Thank you for visiting the Cyber and Information Security Lab website!
-
----
-
-### Tips for Adding Screenshots Professionally
-- **File Organization:** Create a `screenshots` directory in your project folder to store all screenshots.
-- **Image Size:** Ensure that your images are properly resized and compressed to avoid slowing down the loading time.
-- **Consistent Naming:** Use clear and consistent naming conventions for your image files (e.g., `homepage.png`, `core_members.png`, etc.).
-  
-This structure ensures clarity while keeping the document visually clean and professional.
+*This README provides a comprehensive guide to the app, ensuring that anyone who wishes to use, install, or contribute to the project can do so easily.*
