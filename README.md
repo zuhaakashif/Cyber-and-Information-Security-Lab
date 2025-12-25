@@ -1,6 +1,6 @@
 ### README
 
-## App Screenshots
+## Web Screenshots
 
 Below are selected screenshots showcasing the web interface for cyber security lab for Institute of Space Technology
 
