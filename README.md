@@ -1,8 +1,8 @@
 ### README
 
-## 🖼️ App Screenshots
+## App Screenshots
 
-Below are selected screenshots showcasing the AcuCare app’s user interface, acne detection pipeline, and treatment recommendation workflow.
+Below are selected screenshots showcasing the web interface for cyber security lab for Institute of Space Technology
 
 <p align="center">
   <img src="csis-1.png" width="550"/>
