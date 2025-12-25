@@ -5,19 +5,19 @@
 Below are selected screenshots showcasing the AcuCare app’s user interface, acne detection pipeline, and treatment recommendation workflow.
 
 <p align="center">
-  <img src="csis-1.png" width="500"/>
+  <img src="csis-1.png" width="550"/>
 </p>
 
 <p align="center">
-  <img src="csis2.png" width="500"/>
+  <img src="csis2.png" width="550"/>
 </p>
 
 <p align="center">
-  <img src="csis3.png" width="500"/>
+  <img src="csis3.png" width="550"/>
 </p>
 
 <p align="center">
-  <img src="csis4.png" width="500"/>
+  <img src="csis4.png" width="550"/>
 </p>
 
 <p align="center">
